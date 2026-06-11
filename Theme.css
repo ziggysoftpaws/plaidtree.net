@@ -1,0 +1,14 @@
+@font-face{
+	font-family: OCR-A Extended;
+	src: url(Fonts/OCRAEXT.ttf);
+}
+	
+P{
+	font-family:OCR-A Extended;
+}
+H1{
+	font-family:OCR-A Extended;
+}
+button{
+	font-family:OCR-A Extended;
+}
