@@ -1,14 +1,6 @@
-@font-face{
-	font-family: OCR-A Extended;
-	src: url(Fonts/OCRAEXT.ttf);
-}
-	
-P{
-	font-family:OCR-A Extended;
-}
-H1{
-	font-family:OCR-A Extended;
-}
-button{
-	font-family:OCR-A Extended;
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url(OCRAEXT (1).woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
