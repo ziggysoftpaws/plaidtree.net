@@ -6,17 +6,92 @@
 	<h2>!THIS WEBSITE IS STILL UNDER CONSTURCTION! PLEASE USE WITH CAUTION!</h2>
 	</head>
 	<body>
-		<p>Backround Select</p>
-		<fieldset class="bgselect">
-    <select name="bgmode">
-        <option value="" selected="">None</option>
-        <option value="Travel.png">Travel EP</option>
-        <option value="Trees.jpg">Trees</option>
-        <option value="Floating On Glass Pumpkins.jpg">Floating On Glass Pumpkins EP</option>
-        <option value="Happy Days (Spring Days Are Coming).png">Spring Days Are Coming</option>
-    </select>
-    <label for="bgmode">theme</label>
-</fieldset>
+		<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image Selector</title>
+    <style>
+        /* Base styles to fix layout and stretch the background */
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            
+            /* Initial placeholder background */
+            background-color: #2c3e50; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            transition: background-image 0.5s ease-in-out; /* Smooth fade effect */
+        }
+
+        /* Container for interface elements */
+        .selector-box {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 12px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        select {
+            padding: 10px 15px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="selector-box">
+        <label for="bg-selector">Choose a Background:</label>
+        <select id="bg-selector">
+            <option value="">-- Select None --</option>
+            <option value="Floating On Glass Pumpkins EPjpg">Floating On Glass Pumpkins EP</option>
+            <option value="Trees.png">Trees</option>
+            <option value="Happy Days (Spring Days Are Coming).png">Spring Days Are Coming</option>
+        </select>
+    </div>
+
+    <script>
+        // 1. Reference the select dropdown element
+        const selector = document.getElementById('bg-selector');
+
+        // 2. Add an event listener that waits for the user to make a choice
+        selector.addEventListener('change', function() {
+            // Get the value of the selected option
+            const selectedImage = this.value;
+
+            if (selectedImage) {
+                // 3. Inject the CSS background image using the URL function
+                document.body.style.backgroundImage = `url('${selectedImage}')`;
+            } else {
+                // Remove the image if "-- Select None --" is picked
+                document.body.style.backgroundImage = 'none';
+            }
+        });
+	</script>
+		
     <p>PlaidTree is a solo electronic music producer who is da bomb</p>
 
 	
