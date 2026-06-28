@@ -13,28 +13,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Background Image Selector</title>
     <style>
-        /* Base styles to fix layout and stretch the background */
-        body {
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-family: Arial, sans-serif;
-            color: #ffffff;
-            
-            /* Initial placeholder background */
-            background-color: #2c3e50; 
-            background-position: center;
+		body {
+			background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
-            transition: background-image 0.5s ease-in-out; /* Smooth fade effect */
         }
 
-        /* Container for interface elements */
         .selector-box {
             background-color: rgba(0, 0, 0, 0.7);
             padding: 30px;
@@ -64,11 +49,11 @@
 <body>
 
     <div class="selector-box">
-        <label for="bg-selector">Choose a Background:</label>
+        <label for="bg-selector">Backround Select:</label>
         <select id="bg-selector">
             <option value="">-- Select None --</option>
-            <option value="Floating On Glass Pumpkins EPjpg">Floating On Glass Pumpkins EP</option>
-            <option value="Trees.png">Trees</option>
+            <option value="Floating On Glass Pumpkins.jpg">Floating On Glass Pumpkins EP</option>
+            <option value="Trees.jpg">Trees</option>
             <option value="Happy Days (Spring Days Are Coming).png">Spring Days Are Coming</option>
         </select>
     </div>
