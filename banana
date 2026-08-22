@@ -3,5 +3,9 @@
 <head>
     <title>Banana.mp3</title>
 </head>
-
+<body>
+<audio controls>
+	<source src="Banana.mp3">
+</audio>
+</body>
 </html>
