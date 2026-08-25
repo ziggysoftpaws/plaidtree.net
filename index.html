@@ -10,8 +10,14 @@
             background-position: center;
             background-repeat: no-repeat;
 
-            font-family: Arial, sans-serif;
-        }
+@font-face {
+        font-family: "MyCustomFont";
+        src: url("OCRAEXT.woff2") format("truetype");
+    }
+
+    body {
+        font-family: "MyCoustomFont", sans-serif;
+    }
 
         #fileSelector {
             position: fixed;
@@ -21,14 +27,6 @@
             background: white;
         }
 
-    @font-face {
-        font-family: "MyCustomFont";
-        src: url("OCRAEXT.woff2") format("truetype");
-    }
-
-    body {
-        font-family: "MyCoustomFont", sans-serif;
-    }
     </style>
 </head>
 
